@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MNIST Classifier</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    input { margin: 5px; padding: 8px; }
+    button { padding: 10px 20px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>MNIST Image Classifier</h1>
+  <form action="/predict" method="post">
+    <p>Enter flattened pixel values (comma-separated):</p>
+    <input type="text" name="features" size="100" placeholder="0.1, 0.2, 0.3, ..." required>
+    <br><br>
+    <button type="submit">Predict</button>
+  </form>
+</body>
+</html>
